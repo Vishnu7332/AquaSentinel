@@ -1,1 +1,4 @@
-
+serviceAccountKey.json
+**/serviceAccountKey.json
+*.pyc
+__pycache__/
