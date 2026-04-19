@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+  .checkout-container { max-width: 1000px; margin: auto; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+  .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  
+  /* Persistent Cart Styling */
+  .cart-summary { position: sticky; top: 20px; }
+  
+  /* Clear Action Button */
+  .btn-place-order { 
+    background: #27ae60; color: white; border: none; 
+    padding: 15px; width: 100%; font-size: 1.1em; 
+    font-weight: bold; border-radius: 5px; cursor: pointer; 
+    margin-top: 15px;
+  }
+  .btn-place-order:hover { background: #219150; }
+  
+  h2 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+  .input-group { margin-bottom: 15px; }
+  input { width: 95%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="checkout-container">
+  <div class="card">
+    <h2>Secure Checkout</h2>
+    <div class="input-group">
+      <label>Delivery Address</label><br>
+      <input type="text" placeholder="123 Street Name, City">
+    </div>
+    <div class="input-group">
+      <label>Payment Method</label><br>
+      <input type="text" placeholder="XXXX-XXXX-XXXX-4242">
+    </div>
+  </div>
+
+  <div class="card cart-summary">
+    <h2>Your Order</h2>
+    <p>1x Deluxe Burger - $12.00</p>
+    <p>1x Large Fries - $4.00</p>
+    <hr>
+    <p><strong>Total: $16.00</strong></p>
+    
+    <button class="btn-place-order">PLACE ORDER NOW</button>
+  </div>
+</div>
+
+</body>
+</html>
